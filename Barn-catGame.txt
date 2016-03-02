@@ -1,0 +1,244 @@
+Help me resurrect Goku!! Find the 3 dragon balls scattered throughout the world!! 
+The D..Dr..Dragon appeared! Goku is back alive :) You have proved yourself a super sayien! 
+And then you suddenly realize, you are trapped in the dragon's realm forever! To be continued in the next episode of DBZ... (@Ameya, copyright(c) CS367)
+#player items:
+	#item:
+		BritishAirwaysTicket
+		Ticket to London
+		false
+		Open LondonAirport
+		true
+		Off to London it is..
+	#item:
+		1000-Pounds
+		Currency : UK
+		false
+		1000 Pounds paid
+		true
+		Off to the old english castle
+	#item:
+		Old-Rusty-ball
+		A Lucky charm, an old ball passed down the family from generations. There are some inscriptions but they aren't readable
+		false
+		Dball3 used
+		true
+		The inscriptions glow bright! The ball lights up the realm! I had the third dragon ball the entire time!!
+#room: 
+	UW-Madison
+	I'm on the banks of lake Mendota. Its a beautiful cold sunny winter day.
+	true
+	true
+	#item:
+		MacBook-Pro
+		2.7 Ghz i5 13" retina display
+		false
+		laptop used
+		true
+		Aahh! I dropped it! Its gone!!! Nooooooooooo!
+	#item:
+		DragonBall-Sensor
+		A mysterious sensor might be useful to sense dragon balls
+		true
+		Sense dragonballs
+		false
+		Beep Beep.. DragonBalls nearby
+	#item:
+		An_old_note
+		It says "Once all 3 gather by the lost city, a door to the light shall open and grant all wishes."
+		false
+		read note
+		false
+		Note read
+	#messageHandler:
+		laptop used
+		visibility
+	#messageHandler:
+		Open LondonAirport
+		room
+		LondonAirport
+#room:
+	LondonAirport
+	You are at Heathrow International Airport!
+	true
+	true
+	#messageHandler:
+		1000 Pounds paid
+		room
+		Castle
+	#messageHandler:
+		AirFrance Ticket used
+		room
+		ParisAirport
+	#messageHandler:
+		Garlic used
+		habitability
+#room:
+	BigBen
+	A bustling crowd in front of the Big Ben! Just the place to be. (sarchasm)
+	true
+	true
+	#item:
+		AirFrance-Ticket
+		Unlimited flights to and from Paris! Air France loves Goku!
+		false
+		AirFrance Ticket used
+		true
+		Yipee! Paris-London-Paris-London!! Lets have fun
+	#item:
+		Garlic
+		Smelly Garlic, ughhh!
+		false
+		Garlic used
+		false
+		Vampires..ye be warned!!
+#room:
+	Castle
+	Oooooh a old spooky castle! The dragon ball must be be up the stairs in the highest room in the tallest tower.
+	true
+	false
+	There is a hoard of vampires waiting for some fresh young blood!
+	#item:
+		DragonBall#1
+		The first dragon ball has a star on it
+		false
+		Dball1 used
+		true
+		The power of the 1st dragon ball opens the secret entrance to the dragon's realm!
+	#item:
+		Gold
+		Gold worth a 1000 Euros
+		false
+		Gold used
+		true
+		Let's go to the Catacombs!
+	#messageHandler:
+		Sense dragonballs
+		visibility
+	#messageHandler:
+		Garlic used
+		habitability
+#room:
+	ParisAirport
+	You are at Charles de Gaulle Airport!
+	true
+	true
+	#item:
+		silver_coin
+		A silver coin..someone must have dropped it
+		false
+		Silver used
+		false
+		Werewolves..Obey me, now SIT! Good boy!
+	#item:
+		flashlight
+		A shiny 2100 lumens torch
+		false
+		flashlight on
+		false
+		Let there be light!
+	#messageHandler:
+		gold used
+		room
+		Catacombs
+	#messageHandler:
+		BHG used
+		room
+		Atlantis
+	#messageHandler:
+		Silver used
+		habitability
+#room:
+	Catacombs
+	One of the scariest Catacombs in the world! Who knows what wanders these parts
+	false
+	false
+	ARH-WOOOOOOOOOOOOOOOOOOOO... Careful, the werewolves might bite.
+	#item:
+		DragonBall#2
+		The second dragon ball has a fire symbol on it
+		false
+		Dball2 used
+		false
+		The power of the 2nd dragon ball unlock's the dragon's realm!
+	#item: 
+		black-hole-generator
+		An ancient device to create bridges to places unknown to man
+		false
+		BHG used
+		true
+		A portal to Atlantis is now opened from Paris
+	#messageHandler:
+		flashlight on
+		visibility
+	#messageHandler:
+		Sense dragonballs
+		visibility
+	#messageHandler:
+		Silver used
+		habitability
+#room:
+	Atlantis
+	The Lost City (more like "ghost city" now), with technology far beyond what we have..the true mark of human advancements all but destroyed.
+	true
+	true
+	#messageHandler:
+		Dball1 used
+		room
+		DragonRealm
+	#messageHandler:
+		Dball2 used
+		habitability
+	#messageHandler:
+		Dball3 used
+		visibility
+#room:#win
+	DragonRealm
+	Its soooo bright! Gold, gold gold everywhere! The Dragon soars through the skies
+	false
+	false
+	Multiple spells shield the realm. Only those who are worthy may proceed.
+	#item:#win
+		Dragon
+		A fierce dragon with blue scales
+		false
+		Dragon used
+		true
+		Goku is back alive
+	#messageHandler:
+		Dball2 used
+		habitability
+	#messageHandler:
+		Dball3 used
+		visibility
+#locked passages:
+UW-Madison LondonAirport
+I need a flight ticket. Where did I keep that?
+LondonAirport Castle
+I need 1000 pounds to go there
+LondonAirport DragonRealm
+How do I get there I wonder?
+LondonAirport ParisAirport
+I need another flight ticket
+ParisAirport Catacombs
+I need 1000 euros to go there
+ParisAirport DragonRealm
+How do I get there I wonder?
+ParisAirport Atlantis
+I need to find some sort of key to get there
+Atlantis DragonRealm
+How do I get there I wonder?
+Catacombs DragonRealm
+How do I get there I wonder?
+BigBen DragonRealm
+How do I get there I wonder?
+Castle DragonRealm
+How do I get there I wonder?
+#Adjacency List:
+UW-Madison
+LondonAirport BigBen
+BigBen LondonAirport
+Castle LondonAirport
+ParisAirport LondonAirport
+Catacombs ParisAirport
+Atlantis ParisAirport
+DragonRealm
